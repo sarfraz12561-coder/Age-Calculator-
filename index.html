@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator - Sarfraz Ahmad</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="celebration-sound" src="https://assets.mixkit.co/active_storage/sfx/2013/2013-preview.mp3"></audio>
+
+    <div class="container">
+        <div class="profile-logo">
+            <img src="https://i.ibb.co/Xrbbch9c/fotor-2023-1-14-11-58-10-removebg-preview.png" alt="Sarfraz Ahmad">
+        </div>
+
+        <div class="main-title">Age Calculator</div>
+        <div class="sub-title">PROFESSIONAL AGE TRACKING TOOL</div>
+
+        <input type="date" id="dob">
+
+        <div class="btn-group">
+            <button class="calc-btn" onclick="calculate()">CALCULATE AGE</button>
+            <button class="reset-btn" onclick="resetForm()">RESET</button>
+        </div>
+
+        <div id="results-container">
+            <div id="results">
+                <div class="card green-card">
+                    <span class="card-label">Exact Current Age</span>
+                    <div class="card-value" id="exact-age"></div>
+                </div>
+
+                <div class="card orange-card">
+                    <span class="card-label">Next Birthday Countdown</span>
+                    <div class="card-value" id="next-bday"></div>
+                </div>
+
+                <div class="card blue-card">
+                    <span class="card-label">Total Days Lived</span>
+                    <div class="card-value" id="total-days"></div>
+                </div>
+            </div>
+
+            <div class="footer-branding">Powered by Sarfraz Ahmad</div>
+            <button class="share-btn">SHARE</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
